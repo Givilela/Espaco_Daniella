@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Salão de Sobrancelhas e Cílios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light primary-color">
+            <div class="container-fluid p-3">
+                <a class="" href="index.html"><img
+                        src="img/Cópia de Cópia de Site Empresarial Serviços Negócios Laranja Preto Branco.jfif"
+                        alt="Espaço Daniella Resende"></a>    
+        </nav>
+    
+    </header>
+    <!-- Login Page -->
+    <section id="login" class="py-5 second-color ">
+        <div class="container">
+            <h2 class="text-center">Login</h2>
+
+            <!-- Formulário de login -->
+            <form action="valida.php" method="post">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Seu Usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Sua Senha" required>
+                </div>
+                <button type="submit" class="btn primary-color btn-custom">Login</button>
+            </form>
+          
+        </div>
+    </section>
+
+    <script>
+        // Função para verificar a presença de 'error' na query string
+        function checkError() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('error')) {
+                alert('Usuário ou senha inválidos!');
+            }
+        }
+
+        // Chama a função ao carregar a página
+        window.onload = checkError;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
