@@ -1,0 +1,1 @@
+Este repositório contém o código-fonte do front-end para o site de um salão especializado em design de sobrancelhas e cílios. O site oferece informações sobre os serviços oferecidos, agendamento online, galeria de fotos de trabalhos realizados e um blog com dicas de cuidados com sobrancelhas e cílios.
